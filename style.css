@@ -1,0 +1,444 @@
+@charset "UTF-8";
+body {
+  font-family: "Martel", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #241807;
+  margin: 0;
+}
+
+body {
+  font-family: "Martel", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #241807;
+  margin: 0;
+}
+
+header {
+	margin-top: 100px;
+}
+h1 {
+    font-family: "Capriola", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+    color: #FF6CAA;
+    font-size: 64px;
+}
+
+h2 {
+  font-family: "Capriola", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 41px;
+  color: #FF6CAA;
+}
+
+h3 {
+    font-family: "Martel", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    color: #FF6CAA;
+}
+
+.flexcontainer {
+	display:flex;
+	background-color: cadetblue;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center
+}
+
+.flexcontainer div {
+	padding: 100px;
+	color: white;
+}
+
+article{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.leftImage {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+q{
+  font-family: "Martel", serif;
+  font-weight: 700;
+  font-size: 32px;
+  font-style:normal;
+  color: #259C94;
+  margin: 2px;
+}
+
+.padding{
+	padding-right:50%;
+	
+}
+
+.paddingtop {
+	padding-top: 20px
+}
+
+.marginbottom{
+	margin-bottom: 0px
+}
+
+.margintop{
+	margin-top: 5px
+}
+
+.Subheadings{
+  font-family: "Martel", serif;
+  font-weight: 645;
+  font-size: 21px;
+  color: #FF6CAA;
+ margin: auto;
+font-style: italic;
+	
+}
+
+section {
+	padding: 10%;
+}
+
+/*background color for section*/
+.sectionBG {
+	background-color: #FBD6E1;
+	overflow: auto;
+}
+
+.sectionTypography {
+	background-color: #FFF9ED;
+	padding-top: 2%;
+	padding-bottom: 2%
+}
+
+.sectionColor {
+	background-color: #FBD7E1;
+	padding-top: 5%;
+	padding-bottom: 2.5%
+}
+
+.sectionAbout {
+	padding-top: 5%;
+	padding-bottom: 5%
+}
+
+.sectionWork {
+	padding-top: 2%;
+	padding-bottom: 2%
+}
+
+footer {
+	padding: 10%;
+	background-color: #FFF9ED;
+	padding-top: 2.5%;
+	padding-bottom: 5%
+}
+
+a {
+	color:#259C94
+}
+
+a:hover {
+	color: #5EA899;
+}
+
+.button {
+  background-color: #259C94;
+  border: none;
+  color: #FFF9ED;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  boarder-radius: 5px;
+  font-family: "Capriola", sans-serif; 
+}
+
+.button:hover {
+	background-color: #5EA899
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.left { 
+	float: left;
+	padding-right: 40px;
+	padding-bottom: 30px;
+}
+
+.right { 
+	float: right;
+	padding-right: 40px;
+}
+
+.hero {
+	background-image:url("img/TOOLKITHeroSection.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.heroABOUT {
+	background-image:url("img/ABOUTHeroSection.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.heroWORK {
+	background-image:url("img/WORKHeroSection.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.heroEXPERIMENTS {
+	background-image:url("img/EXPERIMENTSHeroSection.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.imageCenter {
+	width: 50%;              /* The element MUST have a defined width */
+  margin: 0 auto;          /* Automatically splits left and right space */
+
+}
+
+.imageContainer img {
+	width: 100%;
+	height: auto;
+	
+}
+
+ul.topnav {
+	  position: fixed;
+		width: 100%;
+		top: 0;
+list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFF9ED;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: #FF6CAA;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Martel", serif;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #FBD7E1;}
+
+ul.topnav li a.active {background-color: #FBD7E1;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+/*Contact Form*/
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #FF6CAA;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+ font-family: "Martel", serif;
+}
+
+input[type=submit]:hover {
+  background-color: #FBD6E1;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.columnLeft {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.columnRight{
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Target all input placeholders */
+input::placeholder {
+  font-family: "Martel", serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  color: #FF6CAA;
+}
+
+
+/*Image Gallery*/
+div.gallery {
+  border: 0px solid #FBD6E1;
+	background-color: #FBD6E1;
+	padding: 5px
+}
+
+div.gallery:hover {
+  border: 5px solid #FF6CAA;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+font-family: "Martel", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #241807;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.responsive {
+  padding:15px;
+  float: left;
+  width: 25%;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Image Grid*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Martel", serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color:#259C94;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: "Martel", serif;
+  color: #FFF9ED;
+  font-weight: 700
+}
+
+.btn:hover {
+  background-color: #5EA899;
+}
+
+.btn.active {
+  background-color: #5EA899;
+  color: #FFF9ED;
+}

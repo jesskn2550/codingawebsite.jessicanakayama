@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>experiments</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+
+	<nav>
+		<ul class="topnav">
+	  <li><a href="index.html">ABOUT</a></li>
+	  <li><a href="work.html">WORK</a></li>
+	  <li><a href="toolkit.html">TOOLKIT</a></li>
+	  <li class="right"><a class="active" href="experiments.html">EXPERIMENTS</a></li>
+</ul>
+	</nav>
+<body>
+	<!--Hero Section-->
+	<section class="heroEXPERIMENTS">
+		<div class="header" id="myHeader">
+	<h1>Origami Work</h1>
+  <h3>My exploration of origami as a subject through two projects.</h3>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
+</div>
+	</section>
+
+<!-- Photo Grid -->
+	<section style="background-color: #FFF9ED">
+<div class="row"> 
+  <div class="column">
+    <img src="img/RedOrigamiBird-Web.jpg" alt="Red origami bird sitting on a branch" style="width:100%">
+    <img src="img/OrangeOrigamiFox-Web.jpg" alt="Orange origami fox sitting in the grass with orange leave in the background" style="width:100%">
+    <img src="img/YellowOrigamiButterfly-Web.jpg" alt="Yellow origami butterfly sitting on a pink gerber daisy" style="width:100%">
+    <img src="img/BlueOrigamiBunny-Web.jpg" alt="Blue origami bunny sitting in the snow" style="width:100%">
+    <img src="img/BlueOrigamiBoat-Web.jpg" alt="Blue origami boat sitting in the water surrounded by ice" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img/RedOrigamiBird1-Web.jpg" alt="Red origami bird sitting on branch with leaves and berries on it" style="width:100%">
+    <img src="img/OrangeOrigamiFox1-Web.jpg" alt="Orange origami fox surrounded by orange leaves" style="width:100%">
+    <img src="img/YellowOrigamiButterfly1-Web.jpg" alt="Yellow origami butterfly on gerber daisy" style="width:100%">
+    <img src="img/BlueOrigamiBunny1-Web.jpg" alt="Blue origami bunny sitting in snow surounding by grass" style="width:100%">
+    <img src="img/OrigamiOwl-Web.jpg" alt="Origami owl sitting in a Christmas tree" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="img/Nakayama-Final-1-Web.jpg" alt="Pink origami fox and bird as a double exposure" style="width:100%">
+    <img src="img/Nakayama-Final-2-Web.jpg" alt="Origami fish surrounded by light" style="width:100%">
+    <img src="img/Nakayama-Final-3-Web.jpg" alt="Orgami blue crane and swan by orange background, double exposure photo" style="width:100%">
+    <img src="img/Nakayama-Final-4-Web.jpg" alt="Pink origami fox doubled exposed with green background" style="width:100%">
+    <img src="img/Nakayama-Final-5-Web.jpg" alt="Red and yellow origami fox, double exposed" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img/FishOrigamiExposure-Web.jpg" alt="Orange and silver origami fish surrounded by light" style="width:100%">
+    <img src="img/BlueOrigamiExposure-Web.jpg" alt="Blue origami crane and swan, double exposed photo" style="width:100%">
+    <img src="img/BlueOrangeOrigamiExposure-Web.jpg" alt="Blue and orange doubled exposed photo of origami crane and swan" style="width:100%">
+    <img src="img/PinkGreenOrigamiExposure-Web.jpg" alt="Pink origami fox and bird double exposed with green background" style="width:100%">
+    <img src="img/PrimaryColoredOrigamiFox-Web.jpg" alt="Red, blue, and yellow double exposed origami fox" style="width:100%">
+  </div>
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+</section>
+	<!--Referenced articles-->
+	<footer> 
+		<h3 id="creditssection">Credits and Citations</h3>
+		<ul>
+			<li><cite><a href="https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp" target="_blank">Coding For Responsive Image Grid From W3 Schools</a></cite></li>
+			<li><cite>Images used for Hero Section and photos shown above were made by me. </cite></li>
+		</ul>
+		</footer>	
+
+</body>
+</html>
